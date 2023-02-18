@@ -189,7 +189,7 @@ class LmCloudSpmd2BLimitSteps(LmCloudSpmd2B):
     return task_p
 
 @experiment_registry.register
-class LmCloudSpmd2BLimitSteps64(LmCloudSpmd2BLimitSteps):
+class LmCloudSpmd2BLimitSteps16(LmCloudSpmd2BLimitSteps):
   """ V5litepod_16 topology 4x4 """
   ICI_MESH_SHAPE = [4, 4, 1]
 
