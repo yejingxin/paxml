@@ -190,8 +190,7 @@ class LmCloudSpmd2BLimitSteps(LmCloudSpmd2B):
 
 @experiment_registry.register
 class LmCloudSpmd2BLimitSteps64(LmCloudSpmd2BLimitSteps):
-  ICI_MESH_SHAPE = [1, 4, 1]
-  DCN_MESH_SHAPE = [16, 1, 1]
+  ICI_MESH_SHAPE = [1, 16, 4]
 
 
 @experiment_registry.register
