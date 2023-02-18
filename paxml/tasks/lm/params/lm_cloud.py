@@ -190,6 +190,12 @@ class LmCloudSpmd2BLimitSteps(LmCloudSpmd2B):
 
 @experiment_registry.register
 class LmCloudSpmd2BLimitSteps64(LmCloudSpmd2BLimitSteps):
+  """ V5litepod_16 topology 4x4 """
+  ICI_MESH_SHAPE = [4, 4, 1]
+
+@experiment_registry.register
+class LmCloudSpmd2BLimitSteps64(LmCloudSpmd2BLimitSteps):
+  """ V5litepod_64 topology 8x8 """
   ICI_MESH_SHAPE = [8, 8, 1]
 
 
