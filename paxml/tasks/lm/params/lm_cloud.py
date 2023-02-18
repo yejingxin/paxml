@@ -188,6 +188,10 @@ class LmCloudSpmd2BLimitSteps(LmCloudSpmd2B):
     task_p.train.num_train_steps = 300
     return task_p
 
+@experiment_registry.register
+class LmCloudSpmd2BLimitSteps64(LmCloudSpmd2BLimitSteps):
+  ICI_MESH_SHAPE = [16, 4, 1]
+
 
 @experiment_registry.register
 class LmCloudSpmd32B(LmCloudSpmd):
